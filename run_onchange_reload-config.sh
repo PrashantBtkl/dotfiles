@@ -16,3 +16,7 @@ for pid in $(pgrep zsh); do
         echo "source ~/.zshrc" > /proc/$pid/fd/0
     fi
 done
+
+# setup vim dependancies
+vi +'PlugClean --sync' +qa
+vi +'PlugInstall --sync' +qa
