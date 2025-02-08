@@ -1,0 +1,8 @@
+{
+  "elixir.pathToElixirLS": "~/.elixir-ls/release/language_server.sh",
+  "svelte.enable-ts-plugin": true,
+   "kotlin": {
+        "command": "~/.config/kotlin/server/bin/kotlin-language-server",
+        "filetypes": ["kotlin"]
+   }
+}
