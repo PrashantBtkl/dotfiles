@@ -1,0 +1,20 @@
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[user]
+	email = prashant44backup@gmail.com
+	name = PrashantBtkl
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defaultBranch = main
+[core]
+	autocrlf = input
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
