@@ -116,7 +116,7 @@ alias cdf='cd $(fdfind --type directory | fzf)'
 alias gpt4all='/home/xaonan/gpt4all/bin/chat'
 alias python='python3'
 alias bat='batcat'
-alias pnpm='~/.local/share/pnpm/pnpm'
+alias pnpm="$HOME/.local/share/pnpm/pnpm"
 
 alias vpn_dns='echo nameserver 172.31.0.2 | sudo tee -a  /etc/resolv.conf > /dev/null'
 alias produp='wg-quick up production && vpn_dns'
