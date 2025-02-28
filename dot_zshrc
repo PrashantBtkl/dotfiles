@@ -9,7 +9,6 @@ export ANDROID_HOME=$HOME/Android
 export IMAGEMAGICK_BINARY=/usr/local/bin/magick
 export PATH=$PATH:$GOPATH/bin:/usr/local/go/bin
 export PATH=$PATH:/opt/nvim-linux64/bin
-export PATH=$PATH:$HOME/.local/share/pnpm
 . $HOME/.asdf/asdf.sh
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
@@ -117,6 +116,7 @@ alias cdf='cd $(fdfind --type directory | fzf)'
 alias gpt4all='/home/xaonan/gpt4all/bin/chat'
 alias python='python3'
 alias bat='batcat'
+alias pnpm='~/.local/share/pnpm/pnpm'
 
 alias vpn_dns='echo nameserver 172.31.0.2 | sudo tee -a  /etc/resolv.conf > /dev/null'
 alias produp='wg-quick up production && vpn_dns'
