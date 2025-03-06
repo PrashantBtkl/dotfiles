@@ -119,9 +119,9 @@ alias bat='batcat'
 alias pnpm="$HOME/.local/share/pnpm/pnpm"
 
 alias vpn_dns='echo nameserver 172.31.0.2 | sudo tee -a  /etc/resolv.conf > /dev/null'
-alias produp='wg-quick up production && vpn_dns'
+alias produp='wg-quick down develop && wg-quick up production && vpn_dns'
 alias proddown='wg-quick down production'
-alias devup='wg-quick up develop && vpn_dns'
+alias devup='wg-quick down production && wg-quick up develop && vpn_dns'
 alias devdown='wg-quick down develop'
 
 
